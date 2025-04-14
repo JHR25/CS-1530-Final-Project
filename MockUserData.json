@@ -1,0 +1,98 @@
+{
+  "user": [{
+    "name": "Chris",
+    "subscriptions": [
+      {
+        "name": "Netflix",
+        "pricePerMonth": 15.99,
+        "usageTimeHours": 25
+      },
+      {
+        "name": "Spotify",
+        "pricePerMonth": 9.99,
+        "usageTimeHours": 40
+      },
+      {
+        "name": "ChatGPT Plus",
+        "pricePerMonth": 20.00,
+        "usageTimeHours": 12
+      },
+      {
+        "name": "Amazon Prime",
+        "pricePerMonth": 6.99,
+        "usageTimeHours": 5
+      },
+      {
+        "name": "New York Times",
+        "pricePerMonth": 3.99,
+        "usageTimeHours": 2
+      },
+      {
+        "name": "Cirkul",
+        "pricePerMonth": 24.99,
+        "usageTimeHours": 1
+      }
+    ]
+  },
+  {
+    "name": "Alice",
+    "subscriptions": [
+      {
+        "name": "Disney+",
+        "pricePerMonth": 7.99,
+        "usageTimeHours": 18
+      },
+      {
+        "name": "YouTube Premium",
+        "pricePerMonth": 11.99,
+        "usageTimeHours": 30
+      },
+      {
+        "name": "Paramount +",
+        "pricePerMonth": 11.99,
+        "usageTimeHours": 4
+      },
+      {
+        "name": "PokerPro",
+        "pricePerMonth": 11.99,
+        "usageTimeHours": 3
+      },
+      {
+        "name": "PFF",
+        "pricePerMonth": 11.99,
+        "usageTimeHours": 2
+      }
+    ]
+  },
+  {
+    "name": "Jerry",
+    "subscriptions": [
+      {
+        "name": "Office",
+        "pricePerMonth": 27.99,
+        "usageTimeHours": 30
+      },
+      {
+        "name": "AppleTV+",
+        "pricePerMonth": 11.99,
+        "usageTimeHours": 14
+      },
+      {
+        "name": "Pittsburgh Gazette",
+        "pricePerMonth": 9.99,
+        "usageTimeHours": 2
+      },
+      {
+        "name": "McAfee",
+        "pricePerMonth": 41.99,
+        "usageTimeHours": 1
+      },
+      {
+        "name": "Premium AdBLocker",
+        "pricePerMonth": 11.99,
+        "usageTimeHours": 24
+      }
+    ]
+  }
+]
+}
