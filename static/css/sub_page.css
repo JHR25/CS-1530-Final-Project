@@ -1,0 +1,20 @@
+body{
+    min-width: 1286px;
+}
+
+#title{
+    background-color: rgb(113, 8, 8);
+    color: white;
+    text-align: center;
+}
+
+#pic{
+    float: right;
+    margin-right: 100px;
+    margin-top: 10px;
+    width:750px
+}
+
+th, td {
+  padding: 15px;
+}
