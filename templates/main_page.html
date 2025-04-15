@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/main_page.css">
-    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main_page.css')}}">
     <title>Subscription Manager</title>
 </head>
 
@@ -16,16 +15,16 @@
     </p>
 
 
-    <form action="{{ order_summary_reference }}" method="POST" id="bank_account_div">
+    <form action="/login" method="post" id="bank_account_div">
         <h1>Enter your name and bank account here</h1>
         <label for="bank_account"> Bank Account: </label>
         <input type="text" id="bank_account" name="bank_account" placeholder="Enter Bank Account">
-        <input type="Submit" value="Submit Bank Account" id="bank_account_id"><br><br>
+        <br><br>
         <label for="customer"> Customer Name: </label>
         <input type="text" id="customer" name="customer" placeholder="Enter Name">
-        <input type="Submit" value="Submit Name" id="submit_order_id">
+        <input type="Submit" value="Submit" id="submit_order_id">
     </form>
-        <img src="Subscription-Services.jpg" alt="" id="pic">
+        <img src="{{url_for('static',filename='images/Subscription-Services.jpg')}}" alt="" id="pic">
 </body>
 
 </html>
