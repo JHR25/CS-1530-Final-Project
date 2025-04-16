@@ -4,31 +4,37 @@
     "subscriptions": [
       {
         "name": "Netflix",
+        "type": "Entertainment",
         "pricePerMonth": 15.99,
         "usageTimeHours": 25
       },
       {
         "name": "Spotify",
+        "type": "Entertainment",
         "pricePerMonth": 9.99,
         "usageTimeHours": 40
       },
       {
         "name": "ChatGPT Plus",
+        "type": "Productivity",
         "pricePerMonth": 20.00,
         "usageTimeHours": 12
       },
       {
         "name": "Amazon Prime",
+        "type": "Utility",
         "pricePerMonth": 6.99,
         "usageTimeHours": 5
       },
       {
         "name": "New York Times",
+        "type": "Other",
         "pricePerMonth": 3.99,
         "usageTimeHours": 2
       },
       {
         "name": "Cirkul",
+        "type": "Utility",
         "pricePerMonth": 24.99,
         "usageTimeHours": 1
       }
@@ -39,26 +45,31 @@
     "subscriptions": [
       {
         "name": "Disney+",
+        "type": "Entertainment",
         "pricePerMonth": 7.99,
         "usageTimeHours": 18
       },
       {
         "name": "YouTube Premium",
+        "type": "Entertainment",
         "pricePerMonth": 11.99,
         "usageTimeHours": 30
       },
       {
         "name": "Paramount +",
+        "type": "Entertainment",
         "pricePerMonth": 11.99,
         "usageTimeHours": 4
       },
       {
         "name": "PokerPro",
+        "type": "Games",
         "pricePerMonth": 11.99,
         "usageTimeHours": 3
       },
       {
         "name": "PFF",
+        "type": "Productivity",
         "pricePerMonth": 11.99,
         "usageTimeHours": 2
       }
@@ -69,26 +80,31 @@
     "subscriptions": [
       {
         "name": "Office",
+        "type": "Productivity",
         "pricePerMonth": 27.99,
         "usageTimeHours": 30
       },
       {
         "name": "AppleTV+",
+        "type": "Entertainment",
         "pricePerMonth": 11.99,
         "usageTimeHours": 14
       },
       {
         "name": "Pittsburgh Gazette",
+        "type": "Other",
         "pricePerMonth": 9.99,
         "usageTimeHours": 2
       },
       {
         "name": "McAfee",
+        "type": "Productivity",
         "pricePerMonth": 41.99,
         "usageTimeHours": 1
       },
       {
         "name": "Premium AdBLocker",
+        "type": "Productivity",
         "pricePerMonth": 11.99,
         "usageTimeHours": 24
       }
