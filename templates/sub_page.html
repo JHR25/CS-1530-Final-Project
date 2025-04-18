@@ -20,7 +20,7 @@
     {% for sub in subscriptions %}
     <tr>
       <td>{{ sub.name }}</td>
-      <td>{{ sub.type }}</td>
+      <td class="type {{ sub.type|lower }}">{{ sub.type }}</td>
       <td>${{ "%.2f"|format(sub.price) }}</td>
       <td>{{ sub.usage }}</td>
     </tr>
