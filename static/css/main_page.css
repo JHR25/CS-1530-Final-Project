@@ -1,16 +1,64 @@
-body{
-    min-width: 1286px;
-}
-
-#title{
-    background-color: rgb(113, 8, 8);
+body {
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #title {
+    background-color: #721717;
     color: white;
     text-align: center;
-}
-
-#pic{
-    float: right;
-    margin-right: 100px;
-    margin-top: 10px;
-    width:750px
-}
+    padding: 25px 0;
+    font-size: 40px;
+  }
+  
+  #container {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+  }
+  
+  .description {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  #login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  #login-form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #login-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #721717;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #login-form input[type="submit"]:hover {
+    background-color: #a92525;
+  }
+  
+  #pic {
+    display: block;
+    margin: 40px auto;
+    width: 75%;
+    max-width: 750px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }

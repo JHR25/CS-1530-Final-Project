@@ -1,30 +1,28 @@
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static',filename='css/main_page.css')}}">
-    <title>Subscription Manager</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main_page.css') }}" />
+  <title>Subscription Manager</title>
 </head>
-
 <body>
-    <h1 id="title">Subscription Manager</h1>
-    <p>Description: Subscription Manager looks at your active subscriptions through your bank account and helps track them for you!
-        it makes it easy for you to manage your subscriptions and get rid of unused subscriptions. To get started
-        enter in your bank account and name in the box below.
+  <h1 id="title">Subscription Manager</h1>
+
+  <div id="container">
+    <p class="description">
+      Subscription Manager looks at your active subscriptions and helps track them for you.
+      Easily manage what you pay for each month and get rid of subscriptions you don't use!
     </p>
 
-
-    <form action="/login" method="post" id="bank_account_div">
-        <h1>Enter your name and bank account here</h1>
-        <label for="bank_account"> Bank Account: </label>
-        <input type="text" id="bank_account" name="bank_account" placeholder="Enter Bank Account">
-        <br><br>
-        <label for="customer"> Customer Name: </label>
-        <input type="text" id="customer" name="customer" placeholder="Enter Name">
-        <input type="Submit" value="Submit" id="submit_order_id">
+    <form action="/login" method="post" id="login-form">
+      <label for="customer">Enter Your Name:</label>
+      <input type="text" id="customer" name="customer" placeholder="Chris" required />
+      <input type="submit" value="View Subscriptions" />
     </form>
-        <img src="{{url_for('static',filename='images/Subscription-Services.jpg')}}" alt="" id="pic">
+  </div>
+
+  <img src="{{ url_for('static', filename='images/Subscription-Services.jpg') }}" alt="Subscription Banner" id="pic" />
 </body>
+</html>
 
 </html>
