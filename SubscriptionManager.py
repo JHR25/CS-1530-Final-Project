@@ -35,7 +35,7 @@ class SubscriptionManager:
     def get_user(self, username):
         for user in self.users:
             if user.name == username:
-                return user.name
+                return user
         return None
     def get_subscriptions(self,username):
         for user in self.users:

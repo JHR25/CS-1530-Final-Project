@@ -1,42 +1,30 @@
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/sub_page.css">
-    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
-    <title>Subscriptions</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/sub_page.css') }}" />
+  <title>Subscriptions</title>
 </head>
-
 <body>
-    <h1 id="title">Subscription Page</h1>
-    <p>View your subscriptions below.
-    </p>
+  <h1 id="title">Subscriptions for {{ user_name }}</h1>
+  <p>View your subscriptions below.</p>
 
+  <table style="width:100%">
+    <tr>
+      <th>Service</th>
+      <th>Type</th>
+      <th>Price per Month (USD)</th>
+      <th>Usage Time (Hours)</th>
+    </tr>
 
-    <table style="width:100%">
-        <tr>
-          <th>Service</th>
-          <th>Price per Month (USD)</th>
-          <th>Renewal Date</th>
-          <th>Total pay cycles</th>
-          <th>Total spent</th>
-        </tr>
-        <tr>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-        </tr>
-        <tr>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-        </tr>
-    </table>
+    {% for sub in subscriptions %}
+    <tr>
+      <td>{{ sub.name }}</td>
+      <td>{{ sub.type }}</td>
+      <td>${{ "%.2f"|format(sub.price) }}</td>
+      <td>{{ sub.usage }}</td>
+    </tr>
+    {% endfor %}
+  </table>
 </body>
-
 </html>

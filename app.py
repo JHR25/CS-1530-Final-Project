@@ -11,20 +11,30 @@ def main_page():
 
 @app.route('/login', methods=['POST'])
 def login():
-    file = request.files['file']
-    username = request.form['username']
+    username = request.form['customer'] 
 
-    if file:
-        data = json.load(file)
-        manager.load_data(data)
+    try:
+        with open('MockUserData.json') as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        return "Mock data file not found"
 
-        user_info = manager.get_user(username)
-        if user_info:
-            return render_template('sub_page.html', user=user_info)
-        else:
-            return "User not found"
+    manager.load_data(data)
+    user_info = manager.get_user(username)
 
-    return redirect('/')
+    if user_info:
+         return render_template('sub_page.html',
+                               user_name=user_info.name,
+                               subscriptions=[
+                                   {
+                                       'name': s.name,
+                                       'type': s.type,
+                                       'price': s.price,
+                                       'usage': s.usage
+                                   } for s in user_info.subscriptionList
+                               ])
+    else:
+        return "User not found"
 
 if __name__ == '__main__':
     app.run(debug=True)
