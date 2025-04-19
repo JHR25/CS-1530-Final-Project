@@ -8,7 +8,23 @@
 <body>
   <h1 id="title">Subscriptions for {{ user_name }}</h1>
   <p>View your subscriptions below.</p>
-
+  <body>
+  <h1 id="title">Subscriptions for {{ user_name }}</h1>
+  <p>View your subscriptions below.</p>
+    
+  <form action="/login" method="POST" value = "sort">
+    <label for = "types">View Subscriptions by Type</label>
+    <select name="types" id="types">
+      <option value="All">All</option>
+      <option value="Entertainment">Entertainment</option>
+      <option value="Productivity">Productivity</option>
+      <option value="Games">Games</option>
+      <option value="Utility">Utility</option>
+      <option value="Other">Other</option>
+    </select>
+    <button type="submit" name="action">Submit</button>
+  </form>
+    
   <table style="width:100%">
     <tr>
       <th>Service</th>
