@@ -11,6 +11,8 @@ class Subscription: #a subscription class that is inside the user
 @dataclass
 class User:
     name: str
+    username:str
+    password:str
     subscriptionList: list #list of subscriptions: not necessary safe?
 
 class SubscriptionManager:
@@ -29,23 +31,33 @@ class SubscriptionManager:
                 for s in user['subscriptions']:
                     sub = Subscription(name=s['name'],type=s['type'],price=s['pricePerMonth'],usage=s['usageTimeHours'])
                     subs.append(sub)
-                self.users.append(User(name=user['name'], subscriptionList=subs))
+                self.users.append(User(name=user['name'], password=user['password'],username=user['username'],subscriptionList=subs))
         except:
             print("Something went wrong, make sure to run load_data() first")
     def get_user(self, username):
         for user in self.users:
             if user.name == username:
-                return user
+                return user.name
+        return None
+    def get_username(self, username):
+        for user in self.users:
+            if user.name == username:
+                return user.username
+        return None
+    def get_password(self, username):
+        for user in self.users:
+            if user.name == username:
+                return user.password
         return None
     def get_subscriptions(self,username):
         for user in self.users:
             if user.name == username:
                 return user.subscriptionList
         return None
-    def print(self,username):
+    def printList(self,username):
         subs=self.get_subscriptions(username)
         if subs==None:
-            print("No User of this username found")
+            print("No user of this username found")
             return
         for i in subs:
             print(i)

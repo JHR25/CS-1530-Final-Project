@@ -1,6 +1,8 @@
 {
   "user": [{
     "name": "Chris",
+    "username": "Chris123",
+    "password": "password",
     "subscriptions": [
       {
         "name": "Netflix",
@@ -42,6 +44,8 @@
   },
   {
     "name": "Alice",
+    "username":"Alice123",
+    "password": "password",
     "subscriptions": [
       {
         "name": "Disney+",
@@ -77,6 +81,8 @@
   },
   {
     "name": "Jerry",
+    "username":"Jerry123",
+    "password": "password",
     "subscriptions": [
       {
         "name": "Office",
