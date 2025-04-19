@@ -1,6 +1,8 @@
 {
   "user": [{
     "name": "Chris",
+    "username": "Chris123",
+    "password": "password",
     "bank_account": "test",
     "subscriptions": [
       {
@@ -43,6 +45,8 @@
   },
   {
     "name": "Alice",
+    "username": "Alice123",
+    "password": "password",
     "bank_account": "test",
     "subscriptions": [
       {
@@ -79,6 +83,8 @@
   },
   {
     "name": "Jerry",
+    "username": "Chris123",
+    "password": "password",
     "bank_account": "test",
     "subscriptions": [
       {
