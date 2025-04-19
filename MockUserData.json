@@ -1,6 +1,7 @@
 {
   "user": [{
     "name": "Chris",
+    "bank_account": "test",
     "subscriptions": [
       {
         "name": "Netflix",
@@ -42,6 +43,7 @@
   },
   {
     "name": "Alice",
+    "bank_account": "test",
     "subscriptions": [
       {
         "name": "Disney+",
@@ -77,6 +79,7 @@
   },
   {
     "name": "Jerry",
+    "bank_account": "test",
     "subscriptions": [
       {
         "name": "Office",
