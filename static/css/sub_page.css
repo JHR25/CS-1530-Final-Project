@@ -19,6 +19,10 @@ body {
     font-size: 18px;
     margin-bottom: 30px;
   }
+
+ label{
+    margin-left: 5px;
+  }
   
   table {
     width: 90%;
