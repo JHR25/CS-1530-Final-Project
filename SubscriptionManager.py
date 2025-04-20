@@ -38,7 +38,7 @@ class SubscriptionManager:
     def get_user(self, username):
         for user in self.users:
             if user.name == username:
-                return user.name
+                return user
         return None
     def get_subscriptions(self,username):
         for user in self.users:
@@ -50,10 +50,10 @@ class SubscriptionManager:
             if user.name == username:
                 return user.bank_account
         return None
-    def get_username(self, username):
+    def get_name(self, username):
         for user in self.users:
             if user.name == username:
-                return user.username
+                return user.name
         return None
     def get_password(self, username):
         for user in self.users:
@@ -67,3 +67,10 @@ class SubscriptionManager:
             return
         for i in subs:
             print(i)
+    def removeSubscription(self,subName:str, userName):
+        u = self.get_user(userName)
+        if u is not None:
+            for sub in u.subscriptionList:
+                if sub.name == subName:
+                    u.subscriptionList.remove(sub)
+                    break
