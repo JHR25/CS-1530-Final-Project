@@ -8,14 +8,12 @@ Easily manage what you pay for each month and get rid of subscriptions you don't
 Steps
 1. Check to make sure you have Python installed. Go to a terminal and run **python --version**
 2. If this returns a version number then go to the next step otherwise please download python from their offical site.
-3. Clone the repository into a directory of your choosing and cd to it from your terminal.
+3. Clone the repository using the link https://github.com/JHR25/CS-1530-Final-Project.git into a directory of your choosing and cd to it from your terminal.
 4. Run **python -m venv venv**
 5. Then run **venv/Scripts/activate** (A green (venv) symbol should appear in your terminal)
 6. Run **pip install Flask** in your terminal
 7. Run **Flask run**
 8. Follow the link provided in your terminal to the webpage. (ctr+click the Running on http... link or paste into a web browser)
-3. Export FLASK_APP=app.py?
-4. Export FLASK_ENV=development?
 
 # How to use Subscription Manager
 1. In order to run susbscription manager simply start by typing a valid name and bank account in the corresponding fields. 
