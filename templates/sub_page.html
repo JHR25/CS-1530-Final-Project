@@ -42,18 +42,6 @@
     {% endfor %}
   </table>
 
-  <form action="/login" method="POST" value="delete">
-    <label for = "sub">Cancel Subscription:</label>
-    <input type="text" id="sub" name="sub" placeholder="Subscription Name" required><br>
-    <button type="submit" name="action">Submit</button>
-  </form>
-
-  <div id="container">
-    <p class="errorbox">
-      {{ error_msg }}
-    </p>
-  </div>
-
   <script>
     function deleteRow(r) {
       var i = r.parentNode.parentNode.rowIndex;
