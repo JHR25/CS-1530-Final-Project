@@ -23,7 +23,7 @@ Steps
 2. This will take you to a subscriptions page for the user. You can sort the subscritptions by type, by selecting the corresponding type in the drop down menu and clikcing submit.
    
 # Contributors
--Alexander Flemming\
--Chris Fu\
--Jonathan Ryu\
--Quinn Newman
+Alexander Flemming\
+Chris Fu\
+Jonathan Ryu\
+Quinn Newman
