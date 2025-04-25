@@ -17,11 +17,13 @@ Steps
 # How to use Subscription Manager
 1. In order to run susbscription manager simply start by typing a valid name and bank account in the corresponding fields. 
   The following are valid bank accounts and users that Subscription Manager can access.\
-  -Name: Chris\
+   Name: Chris\
    Bank Account: test\
-  -Name: Alice\
+
+   Name: Alice\
    Bank Account: test\
-  -Name: Jerry\
+
+   Name: Jerry\
    Bank Account: test
 3. This will take you to a subscriptions page for the user. You can sort the subscritptions by type, by selecting the corresponding type in the drop down menu and clikcing submit.
    
