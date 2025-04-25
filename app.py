@@ -26,7 +26,7 @@ def login():
         user_info = manager.get_user(username)
         bank_account = manager.get_bank_account(username)
         if bank_number != bank_account:
-            return "User not found"
+            return render_template('main_page.html', error_msg="User not found")
         if user_info:
                 return render_template('sub_page.html',
                                     user_name=user_info.name,
@@ -39,7 +39,7 @@ def login():
                                         } for s in user_info.subscriptionList
                                     ])
         else:
-            return "User not found"
+            return render_template('main_page.html', error_msg="User not found")
     if "types" in request.form:
         category = request.form['types']
         subscriptions_of_category = []

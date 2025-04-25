@@ -22,12 +22,13 @@
     <button type="submit" name="action">Submit</button>
   </form>
     
-  <table style="width:100%">
+  <table id="subtable" style="width:100%">
     <tr>
       <th>Service</th>
       <th>Type</th>
       <th>Price per Month (USD)</th>
       <th>Usage Time (Hours)</th>
+      <th>Actions</th>
     </tr>
 
     {% for sub in subscriptions %}
@@ -36,8 +37,19 @@
       <td class="type {{ sub.type|lower }}">{{ sub.type }}</td>
       <td>${{ "%.2f"|format(sub.price) }}</td>
       <td>{{ sub.usage }}</td>
+      <td><input type="button" value="Unsubscribe" onclick="deleteRow(this)"></td>
     </tr>
     {% endfor %}
   </table>
+
+  <script>
+    function deleteRow(r) {
+      var i = r.parentNode.parentNode.rowIndex;
+      var mytable = document.getElementById("subtable");
+      var name = mytable.rows[i].cells[0].innerHTML;
+      confirm("Are you sure you would like to unsubscribe from " + name + "?");
+      mytable.deleteRow(i);
+    }
+  </script>
 </body>
 </html>
