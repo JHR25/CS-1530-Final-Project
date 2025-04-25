@@ -114,6 +114,10 @@ def login():
                                         'usage': s.usage
                                     } for s in subscriptions_of_category
                                     ])
+    #if "sub" in request.form:
+    #    name = request.form['sub']
+    #    manager.removeSubscription(name, username)
+    #    return render_template('sub_page.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
