@@ -26,7 +26,8 @@ Steps
 
    Name: Jerry\
    Bank Account: test
-3. This will take you to a subscriptions page for the user. You can sort the subscritptions by type, by selecting the corresponding type in the drop down menu and clikcing submit.
+2. This will take you to a subscriptions page for the user. You can sort the subscritptions by type, by selecting the corresponding type in the drop down menu and clikcing submit.
+3. To remove a subscription you can click the Unsubscribe button under the action section of the subscription.
    
 # Contributors
 Alexander Flemming\
