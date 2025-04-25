@@ -19,5 +19,11 @@ Steps
   The following are valid bank accounts and users that Subscription Manager can access.\
   -Name: Chris Bank Account: test\
   -Name: Alice Bank Account: test\
-  -Name: Jerry Bank Account: test\
+  -Name: Jerry Bank Account: test
 2. This will take you to a subscriptions page for the user. You can sort the subscritptions by type, by selecting the corresponding type in the drop down menu and clikcing submit.
+   
+# Contributors
+-Alexander Flemming\
+-Chris Fu\
+-Jonathan Ryu\
+-Quinn Newman
