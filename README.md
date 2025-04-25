@@ -19,13 +19,13 @@ Steps
 1. In order to run susbscription manager simply start by typing a valid name and bank account in the corresponding fields. 
   The following are valid bank accounts and users that Subscription Manager can access.\
    Name: Chris\
-   Bank Account: test
+   Bank Account: 0013532749
 
    Name: Alice\
-   Bank Account: test
+   Bank Account: 2918453081
 
    Name: Jerry\
-   Bank Account: test
+   Bank Account: 9678342098
 2. This will take you to a subscriptions page for the user. You can sort the subscritptions by type, by selecting the corresponding type in the drop down menu and clikcing submit.
 3. To remove a subscription you can click the Unsubscribe button under the action section of the subscription.
    
