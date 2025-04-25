@@ -18,10 +18,10 @@ Steps
 1. In order to run susbscription manager simply start by typing a valid name and bank account in the corresponding fields. 
   The following are valid bank accounts and users that Subscription Manager can access.\
    Name: Chris\
-   Bank Account: test\
+   Bank Account: test
 
    Name: Alice\
-   Bank Account: test\
+   Bank Account: test
 
    Name: Jerry\
    Bank Account: test
