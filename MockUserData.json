@@ -3,7 +3,7 @@
     "name": "Chris",
     "username": "Chris123",
     "password": "password",
-    "bank_account": "test",
+    "bank_account": "0013532749",
     "subscriptions": [
       {
         "name": "Netflix",
@@ -47,7 +47,7 @@
     "name": "Alice",
     "username": "Alice123",
     "password": "password",
-    "bank_account": "test",
+    "bank_account": "2918453081",
     "subscriptions": [
       {
         "name": "Disney+",
@@ -85,7 +85,7 @@
     "name": "Jerry",
     "username": "Chris123",
     "password": "password",
-    "bank_account": "test",
+    "bank_account": "9678342098",
     "subscriptions": [
       {
         "name": "Office",
